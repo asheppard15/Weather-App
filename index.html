@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span id="city">Paris</span>, <span id="country">France</span>
+      </h1>
+      <h2>
+        <span id="temp">
+      19.7℉           </span> <br /> <span id="weather-icon"> 🌓 </span> <br /> <span id="description">cloudy</span>
+      </h2>
+      <h3 id="date">Tuesday 16:00</h3>
+      <div class="row">
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body" style="font-size: 20px;">
+              <strong>Sun</strong>
+              <br />
+              65℉
+              <br />
+              51℉
+              <br />
+              🌥
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body" style="font-size: 20px;">
+              <strong>Mon</strong>
+              <br />
+              60℉
+              <br />
+              47℉
+              <br />
+              ⛈
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body" style="font-size: 20px;">
+              <strong>Tue</strong>
+              <br />
+              59℉
+              <br />
+              47℉
+              <br />
+              🌧
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body" style="font-size: 20px;">
+              <strong>Wed</strong>
+              <br />
+              61℉
+              <br />
+              46℉
+              <br />
+              🌧
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body" style="font-size: 20px;">
+              <strong>Thu</strong>
+              <br />
+              67℉
+              <br />
+              48℉
+              <br />
+              ⛅
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <form class = "search-form">
+          <div class="form-group">
+            <label for="InputLocation">Check Your Location's Weather</label>
+            <input
+              type="search"
+              class="form-control"
+              id="inputLocation"
+              placeholder="Ex: Search City..."
+            />
+          </div>
+          <div class="search-button">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-outline-success"
+            />
+          </div>
+        </form>
+      <div class ="current-form">
+          <form class="click-form">
+            <div class="form-group">
+                <button type="button" class="btn-current">Current ⌖</button>
+        </div>
+    </form>
+    </div>
+    <script src="src/index.js"></script>
+    <p> Made by Andrea Sheppard</p>
+  </body>
+</html>

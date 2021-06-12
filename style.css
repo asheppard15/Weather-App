@@ -1,0 +1,45 @@
+body {
+  background-color: lightskyblue;
+}
+h1,
+h2 {
+  text-align: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+h3 {
+  font-size: 25px;
+  text-align: center;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+  margin: 0 -50px 0 50px;
+  padding: 20px 0px 15px 40px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.card-details {
+  text-align: center;
+  margin: 0 0px 0 0px;
+  padding: 0px 0px 0px 0px;
+  color: black;
+  background-color: white;
+}
+form {
+  text-align: center;
+}
+
+.form-control {
+  max-width: 200px;
+  text-align: center;
+  border: 1px solid black;
+}
