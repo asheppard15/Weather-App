@@ -67,8 +67,6 @@ function displayWeatherParameter(response) {
   );
   document.querySelector(`#description`).innerHTML =
     response.data.weather[0].main;
-  document.querySelector(`#weather-icon`).innerHTML =
-    response.data.weather[0].icon;
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );

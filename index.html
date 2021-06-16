@@ -15,29 +15,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1>
-        <span id="city">Paris</span>, <span id="country">France</span>
-      </h1>
+      <h1><span id="city">Paris</span>, <span id="country">France</span></h1>
       <h2>
-        <span id="temp">
-      19.7 <span class="units">℉ | <a href="#">℃</a>  </span>  </span> <br /> 
-        <img 
+        <span id="temp"> 19.7 </span
+        ><span class="units">℉ | <a href="#">℃</a> </span> <br />
+        <img
           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
           alt="Clear"
-          id="icon"/> 
-          <br /> <span id="description">cloudy</span>
+          id="icon"
+        />
+        <br />
+        <span id="description">cloudy</span>
       </h2>
       <h3 id="date">Tuesday 16:00</h3>
       <div class="row">
         <div class="col-2">
           <div class="card">
-            <div class="card-body" style="font-size: 20px;">
+            <div class="card-body" style="font-size: 20px">
               <strong>Sun</strong>
               <br />
               65℉
@@ -51,7 +51,7 @@
         </div>
         <div class="col-2">
           <div class="card">
-            <div class="card-body" style="font-size: 20px;">
+            <div class="card-body" style="font-size: 20px">
               <strong>Mon</strong>
               <br />
               60℉
@@ -65,7 +65,7 @@
         </div>
         <div class="col-2">
           <div class="card">
-            <div class="card-body" style="font-size: 20px;">
+            <div class="card-body" style="font-size: 20px">
               <strong>Tue</strong>
               <br />
               59℉
@@ -79,7 +79,7 @@
         </div>
         <div class="col-2">
           <div class="card">
-            <div class="card-body" style="font-size: 20px;">
+            <div class="card-body" style="font-size: 20px">
               <strong>Wed</strong>
               <br />
               61℉
@@ -93,7 +93,7 @@
         </div>
         <div class="col-2">
           <div class="card">
-            <div class="card-body" style="font-size: 20px;">
+            <div class="card-body" style="font-size: 20px">
               <strong>Thu</strong>
               <br />
               67℉
@@ -107,32 +107,38 @@
         </div>
       </div>
       <br />
-      <form class = "search-form d-flex justify-content-center align-items-end mb-3">
+      <form
+        class="search-form d-flex justify-content-center align-items-end mb-3"
+      >
+        <div class="form-group">
+          <label for="InputLocation">Check Your Location's Weather</label>
+          <input
+            type="search"
+            class="form-control"
+            id="inputLocation"
+            placeholder="Ex: Search City..."
+          />
+        </div>
+        <div class="search-button">
+          <input
+            type="submit"
+            value="Search"
+            class="form-control btn btn-outline-success"
+          />
+        </div>
+      </form>
+      <div class="current-form">
+        <form class="click-form">
           <div class="form-group">
-            <label for="InputLocation">Check Your Location's Weather</label>
-            <input
-              type="search"
-              class="form-control"
-              id="inputLocation"
-              placeholder="Ex: Search City..."
-            />
-          </div>
-          <div class="search-button">
-            <input
-              type="submit"
-              value="Search"
-              class="form-control btn btn-outline-success"
-            />
+            <button type="button" class="btn-current">Current ⌖</button>
           </div>
         </form>
-      <div class ="current-form">
-          <form class="click-form">
-            <div class="form-group">
-                <button type="button" class="btn-current">Current ⌖</button>
-        </div>
-    </form>
+      </div>
+      <script src="index.js"></script>
+      <p>
+        Made by Andrea Sheppard <br />
+        <a href="https://github.com/asheppard15/Weather-App"> GitHub </a>
+      </p>
     </div>
-    <script src="src/index.js"></script>
-    <p> Made by Andrea Sheppard </br> <a href="https://github.com/asheppard15/Weather-App"> GitHub </a></p>
   </body>
 </html>
