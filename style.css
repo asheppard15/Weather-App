@@ -43,3 +43,10 @@ form {
   text-align: center;
   border: 1px solid black;
 }
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}

@@ -76,6 +76,8 @@ function displayWeatherParameter(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  fahrenheitTemperature = response.data.main.temp;
 }
 function handleSubmit(event) {
   event.preventDefault();
@@ -93,5 +95,34 @@ function getCurrentLocation(event) {
 }
 let searchLocation = document.querySelector(".search-form");
 searchLocation.addEventListener("submit", handleSubmit);
+
 let currentLocationButton = document.querySelector(".btn-current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celsiusLink = document.querySelector("celsius-link");
+celsiusLink.addEventListner("click", displayCelsiusTemperature);
+
+let fahrenheitLink = document.querySelector("fahrenheit-link");
+fahrenheitLink.addEventListner("click", displayFahrenheitTemperature);
+
+let celsiusTemperature = null;
+
+search("Paris");
