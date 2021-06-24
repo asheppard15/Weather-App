@@ -23,11 +23,8 @@
     <div class="container">
       <h1><span id="city">Paris</span>, <span id="country">France</span></h1>
       <h2>
-        <span id="temperature"> 19 </span>
-        <span class="units"
-          ><a href="#" id="fahrenheit-link" class="active">℉</a> |
-          <a href="#" id="celsius-link" class="active">℃</a>
-        </span>
+        <span id="temperature"> 66 </span>
+        <span class="units">℉ </span>
         <br />
         <img
           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
@@ -38,74 +35,20 @@
         <span id="description">cloudy</span>
       </h2>
       <h3 id="date">Tuesday 16:00</h3>
-      <div class="row">
-        <div class="col-2">
-          <div class="card">
-            <div class="card-body" style="font-size: 20px">
-              <strong>Sun</strong>
-              <br />
-              65℉
-              <br />
-              51℉
-              <br />
-              🌥
-              <br />
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <div class="card-body" style="font-size: 20px">
-              <strong>Mon</strong>
-              <br />
-              60℉
-              <br />
-              47℉
-              <br />
-              ⛈
-              <br />
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <div class="card-body" style="font-size: 20px">
-              <strong>Tue</strong>
-              <br />
-              59℉
-              <br />
-              47℉
-              <br />
-              🌧
-              <br />
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <div class="card-body" style="font-size: 20px">
-              <strong>Wed</strong>
-              <br />
-              61℉
-              <br />
-              46℉
-              <br />
-              🌧
-              <br />
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <div class="card-body" style="font-size: 20px">
-              <strong>Thu</strong>
-              <br />
-              67℉
-              <br />
-              48℉
-              <br />
-              ⛅
-              <br />
+      <div class="weather-forecast" id="forecast">
+        <div class="row">
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body" style="font-size: 20px">
+                <strong>Sun</strong>
+                <br />
+                <span class="weather-forecast-temperature-max"> 65° </span>
+                <br />
+                <span class="weather-forecast-temperature-min"> 51° </span>
+                <br />
+                🌥
+                <br />
+              </div>
             </div>
           </div>
         </div>
