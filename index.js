@@ -97,7 +97,7 @@ dateElement.innerHTML = formatDate(currentTime);
 
 function getForecast(coordinates) {
   let apiKey = "a32a92574243f77d3ebcc51cf8a19a88";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude={part}&appid=${apiKey}&unit=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude={part}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
